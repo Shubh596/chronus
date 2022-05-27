@@ -6,13 +6,83 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Login</title>
+        <style>
+
+            #navbar {
+                height: 53px;
+                width: 100%;
+                border: 3px solid;
+                display: flex;
+                justify-content: flex-end;
+              
+            }
+            .in {
+                padding: 15px 30px;
+                font-size: 18px;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #login-form-div {
+                height: 300px;
+                width: 340px;
+                border: 1px solid white;
+                margin: auto;
+                margin-top: 100px;
+                text-align: center;
+                border-radius: 10px;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                
+            }
+            .email {
+                width: 60%;
+                height: 25px;
+                margin-top: 20px;
+            }
+            .pass {
+                width: 60%;
+                height: 25px;
+                margin-top: 20px;
+            }
+            .sub {
+                width: 30%;
+                height: 30px;
+                margin-top: 20px;
+                background-color: teal;
+                color: aliceblue;
+                border: 0px;
+                border-radius: 5px;
+                cursor: pointer;
+
+            }
+            .head {
+                font-family: Arial, Helvetica, sans-serif;
+                margin-top: 40px;
+            }
+            .in>a{
+                text-decoration: none;
+                color: black;
+            }
+        </style>
     </head>
 
     <body>
+        <div id="navbar">
+            <div class="in"><a href="index.html">Home</a></div>
+            <div class="in"><a href="signup.html">Signup</a></div>
+            <div class="in"><a href="login.html">Login</a></div>
+        </div>
+
+
         <div id="login-form-div">
+            <h1 class="head">Login</h1>
 
             <form>
                 <!--Write form input elements here-->
+                <input class="email" type="text" placeholder="Enter your Email">
+                <input class="pass" type="text" placeholder="Enter your Password">
+                <br>
+                <input class="sub" type="Submit">
+
 
             </form>
 
